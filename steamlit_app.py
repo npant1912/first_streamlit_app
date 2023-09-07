@@ -1,5 +1,5 @@
 import streamlit
-streamlit.title('hello this is for test purpose ')
-streamlit.header('Food purpose')
-streamlit.text('We need to go')
-streamlit.title('Food Program')
+import panda
+my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
+streamlit.dataframe(my_fruit_list)
+
