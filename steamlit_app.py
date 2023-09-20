@@ -21,7 +21,7 @@ try:
     #streamlit.write('The user entered ', fruit_choice)
   else:
     back_from_function = get_fruityvice_data(fruit_choice)
-    steamlit.dataframe(back_from_function)
+    streamlit.dataframe(back_from_function)
 except URLError as e:
     streamlit.error()
 streamlit.stop()
